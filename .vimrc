@@ -35,7 +35,6 @@ if has("gui_running")
   set guifont=DejaVu\ Sans\ Mono:h14.00
   set lines=50
   set columns=110
-  set transparency=10  "only works in MacVim
 endif
 
 " Run shortcut for different file types
