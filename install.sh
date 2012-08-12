@@ -20,7 +20,7 @@ done
 # compile C extension for command-t
 # OS X Mountain Lion will need /usr/bin/gcc-4.2. Symlink /usr/bin/gcc to /usr/bin/gcc-4.2.
 ## ln -s /usr/bin/gcc /usr/bin/gcc-4.2
-cd ~/.vim/bundle/commant-t/ruby/command-t
+cd ~/.vim/bundle/command-t/ruby/command-t
 rbenv local system
 ruby extconf.rb
 make
