@@ -50,9 +50,11 @@ au FileType ruby map <leader>ss :!rspec %<CR>
 au FileType perl map <leader>r :!perl %<CR>
 au FileType php map <leader>r :!php %<CR>
 
+au FileType javascript map <leader>r :!node %<CR>
 au FileType coffee map <leader>r :!coffee %<CR>
 au FileType coffee map <leader>c :!coffee -c %<CR>
 au FileType coffee map <leader>p :!coffee -p %<CR>
+
 
 
 " Abbreviations
