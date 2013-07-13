@@ -39,6 +39,7 @@ endif
 
 " Run shortcut for different file types
 au FileType python map <leader>r :!python %<CR>
+au FileType go map <leader>r :!go run %<CR>
 
 au FileType c map <leader>r :!gcc %; ./a.out<CR>
 au FileType cpp map <leader>r :!g++ %; ./a.out<CR>
