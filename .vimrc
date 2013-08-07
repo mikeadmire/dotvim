@@ -4,10 +4,10 @@ filetype plugin on
 filetype indent on
 
 set smartindent
-set tabstop=2
-set shiftwidth=2
+set tabstop=4
+set shiftwidth=4
 set expandtab
-set softtabstop=2
+set softtabstop=4
 if has("autocmd") 
   au BufReadPost * if &modifiable | retab | endif 
 endif
