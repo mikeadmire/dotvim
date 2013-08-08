@@ -9,14 +9,11 @@ fi
 git clone https://github.com/mikeadmire/dotvim.git ~/.vim
 git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 
-for i in .vimrc
-do
-  if [ -e $i ] || [ -h $i ]
-  then
-    mv $i $i.$date
-  fi
-  ln -s ~/.vim/$i
-done
+if [ -f ~/.vimrc ]
+then
+    mv ~/.vimrc ~/.vimrc.$date
+fi
+ln -s ~/.vim/.vimrc ~/
 
 echo
 echo
@@ -27,4 +24,4 @@ echo "*                                                             *"
 echo "***************************************************************"
 echo
 
-screen vim +BundleInstall +qall
+vim +BundleInstall +qall
