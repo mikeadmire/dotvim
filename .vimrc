@@ -1,15 +1,29 @@
-call pathogen#infect()
+set nocompatible
+filetype off
 
-filetype plugin on
-filetype indent on
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+Bundle 'gmarik/vundle'
+
+" All my bundles
+Bundle 'tpope/vim-fugitive'
+Bundle 'tpope/vim-rails.git'
+Bundle 'wincent/Command-T'
+Bundle 'scrooloose/nerdtree'
+Bundle 'scrooloose/nerdcommenter'
+Bundle 'vim-scripts/bufexplorer.zip'
+Bundle 'Raimondi/delimitMate'
+Bundle 'tpope/vim-endwise'
+Bundle 'jnwhiteh/vim-golang'
 
 set smartindent
 set tabstop=4
 set shiftwidth=4
 set expandtab
 set softtabstop=4
-if has("autocmd") 
-  au BufReadPost * if &modifiable | retab | endif 
+if has("autocmd")
+  au BufReadPost * if &modifiable | retab | endif
 endif
 
 let mapleader = ","

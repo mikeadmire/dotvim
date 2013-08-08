@@ -8,7 +8,7 @@ fi
 
 git clone git://github.com/mikeadmire/dotvim.git ~/.vim
 
-for i in .gvimrc .vimrc
+for i in .vimrc
 do
   if [ -e $i ] || [ -h $i ]
   then
@@ -17,10 +17,18 @@ do
   ln -s ~/.vim/$i
 done
 
-# compile C extension for command-t
+vim +BundleInstall +qall
+
+# compile C extension for Command-T
 # OS X Mountain Lion will need /usr/bin/gcc-4.2. Symlink /usr/bin/gcc to /usr/bin/gcc-4.2.
 ## ln -s /usr/bin/gcc /usr/bin/gcc-4.2
-cd ~/.vim/bundle/command-t/ruby/command-t
+echo "Compiling Command-T"
+cd ~/.vim/bundle/Command-T
+rbenv local system
+echo "Please provide the root password so I can install any needed rubygems to"
+echo "system ruby. (Command-T needs to be compiled against the same ruby as vim)"
+sudo bundle install
+cd ~/.vim/bundle/Command-T/ruby/command-t
 rbenv local system
 ruby extconf.rb
 make
