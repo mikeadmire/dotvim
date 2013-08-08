@@ -18,7 +18,7 @@ do
   ln -s ~/.vim/$i
 done
 
-echo "run `sh ~/.vim/compile-command-t.sh` to finish installation"
+echo "run 'sh ~/.vim/compile-command-t.sh' to finish installation"
 
 vim +BundleInstall +qall
 
