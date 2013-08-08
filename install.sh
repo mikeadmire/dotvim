@@ -6,7 +6,8 @@ then
     mv ~/.vim ~/.vim.$date
 fi
 
-git clone git://github.com/mikeadmire/dotvim.git ~/.vim
+git clone https://github.com/mikeadmire/dotvim.git ~/.vim
+git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 
 for i in .vimrc
 do
