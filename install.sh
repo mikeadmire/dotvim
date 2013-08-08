@@ -24,4 +24,4 @@ echo "*                                                             *"
 echo "***************************************************************"
 echo
 
-vim +BundleInstall +qall
+mvim +BundleInstall +qall
