@@ -17,6 +17,7 @@ Bundle 'Raimondi/delimitMate'
 Bundle 'tpope/vim-endwise'
 Bundle 'jnwhiteh/vim-golang'
 
+:filetype indent on
 set smartindent
 set tabstop=4
 set shiftwidth=4
