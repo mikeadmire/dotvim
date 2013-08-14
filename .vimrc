@@ -16,6 +16,7 @@ Bundle 'vim-scripts/bufexplorer.zip'
 Bundle 'Raimondi/delimitMate'
 Bundle 'tpope/vim-endwise'
 Bundle 'jnwhiteh/vim-golang'
+Bundle 'thoughtbot/vim-rspec'
 
 :filetype indent on
 set smartindent
@@ -71,6 +72,11 @@ au FileType coffee map <leader>r :!coffee %<CR>
 au FileType coffee map <leader>c :!coffee -c %<CR>
 au FileType coffee map <leader>p :!coffee -p %<CR>
 
+" rspec
+au FileType ruby map <leader>t :call RunCurrentSpecFile()<CR>
+au FileType ruby map <leader>s :call RunNearestSpec()<CR>
+au FileType ruby map <leader>l :call RunLastSpec()<CR>
+au FileType ruby map <leader>a :call RunAllSpecs()<CR>
 
 
 " Abbreviations
