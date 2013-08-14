@@ -56,25 +56,19 @@ endif
 " Run shortcut for different file types
 au FileType python map <leader>r :!python %<CR>
 au FileType go map <leader>r :!go run %<CR>
-
 au FileType c map <leader>r :!gcc %; ./a.out<CR>
 au FileType cpp map <leader>r :!g++ %; ./a.out<CR>
-
 au FileType ruby map <leader>r :!ruby %<CR>
-au FileType ruby map <leader>rs :!rspec<CR>
-au FileType ruby map <leader>ss :!rspec %<CR>
-
 au FileType perl map <leader>r :!perl %<CR>
 au FileType php map <leader>r :!php %<CR>
-
 au FileType javascript map <leader>r :!node %<CR>
 au FileType coffee map <leader>r :!coffee %<CR>
 au FileType coffee map <leader>c :!coffee -c %<CR>
 au FileType coffee map <leader>p :!coffee -p %<CR>
 
 " rspec
-au FileType ruby map <leader>t :call RunCurrentSpecFile()<CR>
-au FileType ruby map <leader>s :call RunNearestSpec()<CR>
+au FileType ruby map <leader>s :call RunCurrentSpecFile()<CR>
+au FileType ruby map <leader>ss :call RunNearestSpec()<CR>
 au FileType ruby map <leader>l :call RunLastSpec()<CR>
 au FileType ruby map <leader>a :call RunAllSpecs()<CR>
 
