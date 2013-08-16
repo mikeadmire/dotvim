@@ -50,7 +50,7 @@ colorscheme koehler
 if has("gui_running")
   set guifont=DejaVu\ Sans\ Mono:h14.00
   set lines=45
-  set columns=105
+  set columns=140
 endif
 
 " Run shortcut for different file types
