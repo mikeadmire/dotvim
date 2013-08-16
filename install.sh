@@ -17,14 +17,3 @@ ln -s ~/.vim/.vimrc ~/
 
 mvim +BundleInstall +qall
 
-echo
-echo "***************************************************************"
-echo "*                                                             *"
-echo "*             !!! Once bundles are installed !!!              *"
-echo "*                                                             *"
-echo "*    Run the following command to finish the installation.    *"
-echo "*                                                             *"
-echo "*                sh ~/.vim/compile-command-t.sh               *"
-echo "*                                                             *"
-echo "***************************************************************"
-echo
