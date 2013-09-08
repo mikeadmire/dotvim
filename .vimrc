@@ -17,6 +17,7 @@ Bundle 'Raimondi/delimitMate'
 Bundle 'tpope/vim-endwise'
 Bundle 'jnwhiteh/vim-golang'
 Bundle 'thoughtbot/vim-rspec'
+Bundle "pangloss/vim-javascript"
 
 :filetype indent on
 set smartindent
