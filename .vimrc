@@ -18,12 +18,13 @@ Bundle 'tpope/vim-endwise'
 Bundle 'jnwhiteh/vim-golang'
 Bundle 'thoughtbot/vim-rspec'
 Bundle "pangloss/vim-javascript"
+Bundle "tpope/vim-markdown"
 
 :filetype indent on
-set smartindent
-set tabstop=2
+"set smartindent
+"set expandtab
+"set tabstop=2
 set shiftwidth=2
-set expandtab
 set softtabstop=2
 if has("autocmd")
   au BufReadPost * if &modifiable | retab | endif
