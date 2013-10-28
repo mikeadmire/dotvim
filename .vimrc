@@ -21,6 +21,8 @@ Bundle "pangloss/vim-javascript"
 Bundle "tpope/vim-markdown"
 
 :filetype indent on
+:filetype plugin on
+
 "set smartindent
 "set expandtab
 "set tabstop=2
