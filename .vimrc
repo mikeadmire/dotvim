@@ -19,6 +19,7 @@ Bundle 'jnwhiteh/vim-golang'
 Bundle 'thoughtbot/vim-rspec'
 Bundle "pangloss/vim-javascript"
 Bundle "tpope/vim-markdown"
+Bundle 'ntpeters/vim-better-whitespace'
 
 :filetype indent on
 :filetype plugin on
