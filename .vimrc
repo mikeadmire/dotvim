@@ -72,6 +72,8 @@ au FileType coffee map <leader>c :!coffee -c %<CR>
 au FileType coffee map <leader>p :!coffee -p %<CR>
 
 " rspec
+let g:rspec_command = "!bundle exec rspec {spec}"
+let g:rspec_runner = "os_x_iterm"
 au FileType ruby map <leader>s :call RunCurrentSpecFile()<CR>
 au FileType ruby map <leader>ss :call RunNearestSpec()<CR>
 au FileType ruby map <leader>l :call RunLastSpec()<CR>
