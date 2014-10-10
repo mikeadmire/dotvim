@@ -63,7 +63,7 @@ au FileType python map <leader>r :!python %<CR>
 au FileType go map <leader>r :!go run %<CR>
 au FileType c map <leader>r :!gcc %; ./a.out<CR>
 au FileType cpp map <leader>r :!g++ %; ./a.out<CR>
-au FileType ruby map <leader>r :!ruby %<CR>
+au FileType ruby map <leader>r :!export PATH="$HOME/.rbenv/shims:$PATH"; ruby %<CR>
 au FileType perl map <leader>r :!perl %<CR>
 au FileType php map <leader>r :!php %<CR>
 au FileType javascript map <leader>r :!node %<CR>
