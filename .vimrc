@@ -25,8 +25,8 @@ Bundle 'ntpeters/vim-better-whitespace'
 :filetype plugin on
 
 "set smartindent
-"set expandtab
-"set tabstop=2
+set expandtab
+set tabstop=2
 set shiftwidth=2
 set softtabstop=2
 if has("autocmd")
