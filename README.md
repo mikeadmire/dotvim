@@ -7,4 +7,4 @@ need to get stuff done efficiently.
 
 ## Installation
 
-`curl https://raw.github.com/mikeadmire/dotvim/master/install.sh -o - | sh`
+`curl https://raw.githubusercontent.com/mikeadmire/dotvim/master/install.sh -o - | sh`
