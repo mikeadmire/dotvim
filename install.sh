@@ -15,5 +15,8 @@ then
 fi
 ln -s ~/.vim/.vimrc ~/
 
-mvim +BundleInstall +qall
-
+if hash mvim 2>/dev/null; then
+    mvim +BundleInstall +qall
+else
+    gvim +BundleInstall +qall
+fi
