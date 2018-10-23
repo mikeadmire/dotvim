@@ -15,7 +15,7 @@ Bundle 'scrooloose/nerdcommenter'
 Bundle 'vim-scripts/bufexplorer.zip'
 Bundle 'Raimondi/delimitMate'
 Bundle 'tpope/vim-endwise'
-Bundle 'jnwhiteh/vim-golang'
+Bundle 'fatih/vim-go'
 Bundle 'thoughtbot/vim-rspec'
 Bundle "pangloss/vim-javascript"
 Bundle "tpope/vim-markdown"
